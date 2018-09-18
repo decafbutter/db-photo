@@ -2,8 +2,8 @@ require('dotenv').config()
 
 module.exports = {
   siteMetadata: {
-    title: `Creative Portfolio`,
-    siteUrl: `https://www.example.com`,
+    title: `SJ Hong`,
+    siteUrl: `https://sjhong.co`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -12,6 +12,15 @@ module.exports = {
       options: {
         name: 'projects',
         path: `${__dirname}/content/projects`,
+        ignore: [`**/\.*`],
+      },
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'images',
+        path: `${__dirname}/src/pages/images`,
+        ignore: [`**/\.*`],
       },
     },
     {

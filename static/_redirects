@@ -1,0 +1,2 @@
+# Redirect default Netlify subdomain to primary domain
+http://infallible-allen-decafbutter.netlify.com/* http://sjhong.co/:splat 301!

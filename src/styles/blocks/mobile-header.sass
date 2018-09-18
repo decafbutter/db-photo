@@ -32,23 +32,6 @@
     text-decoration: none
     color: $dark-body-color
 
-.mobileNav
-  background-color: $dark-body-color
-  display: block
-  height: 50px
-  position: fixed
-  width: 100%
-  z-index: 100
-
-  a
-    color: #fff
-    font-size: 100%
-    margin-bottom: 2rem
-
-    &:hover
-      color: #fff
-
-
 .bm-burger-button
   width: 20px
   height: 20px
@@ -63,9 +46,9 @@
 
 .bm-cross-button
   height: 24px
-  right: 2rem !important
-  top: 2rem !important
-  transform: scale(2.5)
+  right: 1.7rem !important
+  top: 1.2rem !important
+  transform: scale(1.5)
   width: 24px
 
 
@@ -74,10 +57,19 @@
 
 
 .bm-menu
-  background: #ccc !important
-  font-size: 1.15em
-  padding: 2.5em 1.5em
+  background: $dark-body-color !important
+  font-size: 2em
+  font-weight: 200
+  letter-spacing: 0.1em
+  padding: 2em 1em
   overflow-y: hidden !important
+
+  a
+    color: $light-bg-color
+    text-decoration: none
+
+    &:hover
+      color: $light-body-color
 
 .bm-menu-wrap
   overflow-y: visible !important
@@ -89,3 +81,6 @@
 .bm-item-list
   color: #b8b7ad
   padding: 0.8em
+
+  a:last-child
+    margin-left: 0.6rem

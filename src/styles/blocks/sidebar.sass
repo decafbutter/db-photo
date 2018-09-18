@@ -6,9 +6,9 @@
   margin-bottom: 20px
 
   a
-    font-size: 18px
+    font-size: 20px
     text-transform: uppercase
-    font-weight: bold
+    font-weight: 700
     text-decoration: none
     color: $dark-body-color
 
@@ -31,10 +31,11 @@
 
   li
     a
+      font-size: 14px
+      letter-spacing: 1px
       text-decoration: none
       display: block
-      padding-left: 20px
-      color: $base-body-color
+      color: $nav-color
       position: relative
 
       &:before
@@ -45,18 +46,14 @@
         margin-top: -6px
         height: 12px
         width: 12px
-        background: url('https://cdn.rawgit.com/encharm/Font-Awesome-SVG-PNG/master/black/svg/chevron-right.svg')
-        background-position: 50% 50%
-        background-repeat: no-repeat
-        background-size: contain
-        opacity: 0.6
 
       &:hover
-        color: $active-color
+        color: $dark-body-color
+        text-decoration: underline
 
-    &.is-active a
-      font-weight: bold
-      color: $active-color
+      &.is-active
+        color: $dark-body-color
+        text-decoration: underline
 
 .sidebar__social
   margin-bottom: 20px

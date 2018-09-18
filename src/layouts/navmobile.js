@@ -44,18 +44,24 @@ export default class NavMobile extends React.PureComponent {
         <Menu right isOpen={this.state.menuOpen} onStateChange={this.handleStateChange}
             customBurgerIcon={<img src="https://cdn.rawgit.com/encharm/Font-Awesome-SVG-PNG/master/black/svg/bars.svg" />}>
 
-          <Link to="/about" activeClassName="active" onClick={() => this.closeMenu()}>
+          <Link to="/" onClick={() => this.closeMenu()}>
+            Work
+          </Link>
+          <Link to="/about" onClick={() => this.closeMenu()}>
             About
           </Link>
-          <Link to="/contact" activeClassName="active" onClick={() => this.closeMenu()}>
-            Contact
-          </Link>
+
+          <p>
           <a href="https://www.instagram.com/decafbutter" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
           </a>
           <a href="https://www.pinterest.com/decafbutter" target="_blank" rel="noopener noreferrer">
             <FaPinterest />
           </a>
+          <a href="https://www.behance.net/sjlukehongb916" target="_blank" rel="noopener noreferrer">
+            <FaBehance />
+          </a>
+          </p>
         </Menu>
       </div>
 

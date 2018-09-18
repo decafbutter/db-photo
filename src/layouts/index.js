@@ -15,10 +15,10 @@ const TemplateWrapper = ({ children, data }) => (
         <div className="sidebar__intro" />
         <ul className="sidebar__menu">
           <li>
-            <Link to="/">Home</Link>
+            <Link exact to="/" activeClassName="is-active">Work</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link exact to="/about" activeClassName="is-active">About</Link>
           </li>
         </ul>
         <p className="sidebar__social">
@@ -27,6 +27,9 @@ const TemplateWrapper = ({ children, data }) => (
           </a>
           <a href="https://www.pinterest.com/decafbutter" target="_blank" rel="noopener noreferrer">
             <FaPinterest />
+          </a>
+          <a href="https://www.behance.net/sjlukehongb916" target="_blank" rel="noopener noreferrer">
+            <FaBehance />
           </a>
         </p>
       </div>
