@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import { FaInstagram, FaPinterest, FaBehance } from 'react-icons/lib/fa';
+import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import NavMobile from './navmobile';
 import '../styles/index.sass'
 
@@ -22,15 +23,15 @@ const TemplateWrapper = ({ children, data }) => (
           </li>
         </ul>
         <p className="sidebar__social">
-          <a href="https://www.instagram.com/decafbutter" target="_blank" rel="noopener noreferrer">
+          <OutboundLink href="https://www.instagram.com/decafbutter" target="_blank" rel="noopener noreferrer">
             <FaInstagram />
-          </a>
-          <a href="https://www.pinterest.com/decafbutter" target="_blank" rel="noopener noreferrer">
+          </OutboundLink>
+          <OutboundLink href="https://www.pinterest.com/decafbutter" target="_blank" rel="noopener noreferrer">
             <FaPinterest />
-          </a>
-          <a href="https://www.behance.net/sjlukehongb916" target="_blank" rel="noopener noreferrer">
+          </OutboundLink>
+          <OutboundLink href="https://www.behance.net/sjlukehongb916" target="_blank" rel="noopener noreferrer">
             <FaBehance />
-          </a>
+          </OutboundLink>
         </p>
       </div>
     </div>
