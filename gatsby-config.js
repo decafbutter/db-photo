@@ -6,8 +6,8 @@ require('dotenv').config()
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
-    title: `config.siteTitle`,
-    siteUrl: `config.siteUrl`,
+    title: config.siteTitle,
+    siteUrl: config.siteUrl,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -45,21 +45,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "config.googleAnalyticsID",
-        // Puts tracking script in the head instead of the body
-        head: false,
-        // Setting this parameter is optional
-        anonymize: true,
-        // Setting this parameter is also optional
-        respectDNT: true,
-        // Avoids sending pageview hits from custom paths
-        exclude: ["/preview/**", "/do-not-track/me/too/"],
-        // Enables Google Optimize using your container Id
-        optimizeId: "config.googleAnalyticsID",
-        // Any additional create only fields (optional)
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: "example.com",
+        trackingId: config.googleAnalyticsID,
       },
     },
     'gatsby-plugin-sharp',
