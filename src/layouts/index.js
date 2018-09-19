@@ -1,13 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import Helmet from 'react-helmet';
 import { FaInstagram, FaPinterest, FaBehance } from 'react-icons/lib/fa';
 import { OutboundLink } from 'gatsby-plugin-google-analytics';
 import NavMobile from './navmobile';
+import config from '../../config/SiteConfig';
 import '../styles/index.sass'
 
 const TemplateWrapper = ({ children, data }) => (
   <div className="container">
+    <Helmet>
+      <title>{config.siteTitle}</title>
+    </Helmet>
     <div className="container__sidebar">
       <div className="sidebar">
         <h6 className="sidebar__title">

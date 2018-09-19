@@ -1,10 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Img from 'gatsby-image'
+import Helmet from 'react-helmet'
+import config from '../../config/SiteConfig'
 
 const About = () => (
-
   <article className="sheet">
+    <Helmet title={`About | ${config.siteTitle}`} />
     <div className="sheet__inner">
       <h1 className="sheet__title">About</h1>
 {/*
